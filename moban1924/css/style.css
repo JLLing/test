@@ -3119,7 +3119,7 @@ a.icon.gp {
 		letter-spacing: 1px;
 	}
 	.navbar-default .navbar-toggle {
-		margin: 15px 16px 0 0px;
+		margin: 15px -34px 0 0px;
 	}
 	.newsletter input[type="submit"] {
 		padding: 0.8em 1em;
