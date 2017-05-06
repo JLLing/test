@@ -703,11 +703,12 @@ a.read:hover {
 .spa-agile {
     text-align: center;
     margin: 4em auto;
+	width:80%;
 }
 .spa-grid {
     border-right: 1px solid #999;
 }
-.spa-grid:nth-child(5) {
+.spa-grid:nth-child(5),.spa-grid:nth-child(7)  {
 	 border:none;
 }
 h3.tittle.fea {
