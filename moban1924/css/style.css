@@ -3072,7 +3072,7 @@ a.icon.gp {
 		padding: 0;
 	}
 	.navbar-default .navbar-toggle {
-		margin: 15px 12px 0 0px;
+		margin: 15px -38px 0 0px;
 	}
 	.services-info-w3-agileits:after {
 		content: "";
