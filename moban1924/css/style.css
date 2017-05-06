@@ -711,7 +711,7 @@ a.read:hover {
 .spa-grid {
     border-right: 1px solid #999;
 }
-.spa-grid:nth-child(5),.spa-grid:nth-child(7)  {
+.spa-grid:nth-child(5) {
 	 border:none;
 }
 h3.tittle.fea {
@@ -921,6 +921,8 @@ h5.sub-title a {
     display: inline-block;
     color: #fff;
     letter-spacing: 2px;
+	font-size:2vw;
+
 }
 .breadcrumb-inner ul li  a{
    color: #111;
