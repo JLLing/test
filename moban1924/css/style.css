@@ -305,9 +305,10 @@ p.s-log {
 	/* container for the X icon */
 	position: absolute;
 	height: 100%;
-	width: 100%;
+	width: 80%;
 	top: 0;
 	left: 0;
+
 }
 .cd-search-trigger span::before, .cd-search-trigger span::after {
 	/* close icon */
@@ -1987,7 +1988,9 @@ ul.top-links li a i.fa:hover {
 	background-color: #212121;
 }
 .footer-info-agile {
-	margin-top: 50px;
+	margin-top: 10px;
+		margin-bottom: 10px;
+	text-align:center;
 }
 .w3l-footer  h4 {
 	color: #fff;
@@ -2245,7 +2248,7 @@ a.icon.gp {
 		padding: 4em 0;
 	}
 	ul.nav.navbar-nav {
-		margin-left: 17em;
+		margin-left: 30em;
 		margin-top: 2em;
 	}
 	.baner-info h4 {
@@ -2517,7 +2520,7 @@ a.icon.gp {
 		width: 50%;
 	}
 	.footer-info-agile {
-		margin-top: 18px;
+		width:80%;
 	}
 	h3.agileits-icons-title {
 		text-align: center;
