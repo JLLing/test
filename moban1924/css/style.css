@@ -206,7 +206,9 @@ p.s-log {
     text-align: right;
     font-weight: 300;
     letter-spacing: 4px;
-    margin-top: -11px;
+	position:relative;
+	top:0px;
+
     font-size: 0.3em;
 }
 /*-- //nav --*/
@@ -2861,16 +2863,16 @@ a.icon.gp {
 		display: inline-block;
 		line-height: 54px;
 		font-weight: bold;
-		padding-bottom: 24px;
+		padding-bottom: 10px;
 	}
 	.navbar-default .navbar-toggle {
-		margin: 15px 10px 0 0px;
+		margin: 15px -40px 0 0px;
 	}
 	.cd-header-buttons {
 		position: absolute;
 		display: inline-block;
 		top: -61px;
-		right: 0;
+		right: 50px;
 	}
 	.baner-info h3 {
 		font-size: 1.8em;
