@@ -491,7 +491,7 @@
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #e9706e;
+  background-color: #b99682;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -552,7 +552,7 @@
   background-repeat:no-repeat;
   position:relative;
 	margin-top:3px;
-color:#b18a76;
+color:#b99682;
 }
 
 .timeline-title_highlight {
@@ -571,7 +571,7 @@ color:#b18a76;
 				position: absolute;         /*定位背景横线的位置*/
 				left:-15%;
 				top: 29%;
-				background: #b18a76;       /*宽和高做出来的背景横线*/
+				background: #b99682;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
 				z-index:-1;
@@ -581,7 +581,7 @@ color:#b18a76;
 				position: absolute;         /*定位背景横线的位置*/
 				left:-15%;
 				top: 46%;
-				background: #b18a76;       /*宽和高做出来的背景横线*/
+				background: #b99682;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
 				z-index:-1;
@@ -596,14 +596,14 @@ color:#b18a76;
 	  text-align:left;
 	  position:relative;
 	  top:10px;
-	  color:#b18a76;
+	  color:#b99682;
 	  left:-8px;
 	}
 
 	.timeline-body > p,
 	.timeline-body > ul {
 	  margin-bottom: 0;
-	  color:#b18a76;
+	  color:#b99682;
 	}
 
 	.timeline-body > p + p {
@@ -622,7 +622,7 @@ color:#b18a76;
 				position: absolute;         /*定位背景横线的位置*/
 				left:-20%;
 				top: 33px;
-				background: #b18a76;       /*宽和高做出来的背景横线*/
+				background: #b99682;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
 				z-index:-1;
@@ -632,7 +632,7 @@ color:#b18a76;
 				position: absolute;         /*定位背景横线的位置*/
 				left:-20%;
 				top: 12px;
-				background: #b18a76;       /*宽和高做出来的背景横线*/
+				background: #b99682;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
 				z-index:-1;
@@ -647,14 +647,14 @@ color:#b18a76;
 	  text-align:left;
 	  position:relative;
 	  top:10px;
-	  color:#b18a76;
+	  color:#b99682;
 	  left:-15%;
 	}
 
 	.timeline-body > p,
 	.timeline-body > ul {
 	  margin-bottom: 0;
-	  color:#b18a76;
+	  color:#b99682;
 	  margin-right:10%;
 	}
 
@@ -682,7 +682,7 @@ color:#b18a76;
     left: 15px;
     margin-left: 0;
     top: 16px;
-	background-color:#9f745d;
+	background-color:#b89682;
   }
 
   ul.timeline > li > .timeline-panel {
@@ -1362,9 +1362,13 @@ input[type="text"] {
 
 .map{
 	background-image:url(../images/map.png);
-	background-attachment:fixed;
-	background-size:cover;
+	
+	background-size:100% auto;
 	background-position:0px 0px;
+	background-attachment:fixed;
 	
-	
+}
+
+::selection{
+	background:#b99682;
 }
