@@ -33,7 +33,17 @@
 <link href="css/gallery_bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/gallery_style.css" rel='stylesheet' type='text/css' />
 <script src="js/gallery_jquery-1.11.0.min.js"></script>
-<!---- start-smoth-scrolling---->
+<!---- start-smoth-scrollinr--->
+
+<style>
+.cd-search-trigger{background:#678fc3;}
+.navbar-default .navbar-toggle{border-color:#678fc3;background:#678fc3;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background:#678fc3;}
+h1 span{color:#678fc3;}
+.w3_breadcrumb{background:#678fc3;}
+a.mail{color:#678fc3;}
+.w3agile_footer_copy{background:#678fc3;}
+</style>
 
 </head>
 <body>
@@ -125,18 +135,18 @@
 
 			<div class="gallery-bottom">
 				 <ul id="flexiselDemo3">
-						<li>						 	
-							<img src="images/g-2.jpg" alt="" />																								 
-						 </li>
-						 <li>						 	
-							<img src="images/g-2.jpg" alt="" />																								 
-						 </li>
-						 <li>						 	
-							<img src="images/g-2.jpg" alt="" />																								 
-						 </li>
-						 <li>						 	
-							<img src="images/g-2.jpg" alt="" />																								 
-						 </li>
+						<li><img src="images/designer/r1.png" alt="" /></li>
+						<li><img src="images/designer/r2.png" alt="" /></li>
+						<li><img src="images/designer/r3.png" alt="" /></li>
+						<li><img src="images/designer/r4.png" alt="" /></li>
+						<li><img src="images/designer/r5.png" alt="" /></li>
+						<li><img src="images/designer/r6.png" alt="" /></li>
+						<li><img src="images/designer/r7.png" alt="" /></li>
+						<li><img src="images/designer/r8.png" alt="" /></li>
+						<li><img src="images/designer/r9.png" alt="" /></li>
+						<li><img src="images/designer/r10.png" alt="" /></li>
+						<li><img src="images/designer/r11.png" alt="" /></li>
+						<li><img src="images/designer/r12.png" alt="" /></li>
 					 </ul>	 
 			</div>
 		</div>
@@ -253,7 +263,7 @@
 						
 						$("#flexiselDemo3").flexisel({
 						
-							visibleItems: 4,
+							visibleItems: 5,
 							animationSpeed: 1000,
 							autoPlay: true,
 							autoPlaySpeed: 3000,    		
@@ -261,12 +271,12 @@
 							enableResponsiveBreakpoints: true,
 							responsiveBreakpoints: { 
 								portrait: { 
-									changePoint:480,
-									visibleItems: 1
+									changePoint:300,
+									visibleItems: 2.5
 								}, 
 								landscape: { 
 									changePoint:640,
-									visibleItems: 2
+									visibleItems: 2.5
 								},
 								tablet: { 
 									changePoint:768,
