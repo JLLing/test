@@ -431,6 +431,7 @@
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+  margin-top:60px;
 }
 @media screen and (max-width: 768px) {
   .timeline .timeline-heading > div h3 {
@@ -458,18 +459,29 @@
   width: 45%;
   float: left;
   margin-bottom: 0;
+  margin-top: 22px;
+
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
+
+
 @media screen and (max-width: 768px) {
   .timeline > li > .timeline-panel {
     width: 85% !important;
   }
+    	.timeline > li > .timeline-panel {
+		  margin-top: 0px;  
+	}
+
 }
 @media screen and (max-width: 480px) {
+  	.timeline > li > .timeline-panel {
+		  margin-top: 0px;  
+	}
   .timeline > li > .timeline-panel {
     width: 75% !important;
   }
@@ -508,6 +520,7 @@
   .timeline > li > .timeline-badge {
     margin-left: -10px !important;
   }
+  
 }
 .timeline > li > .timeline-badge i {
   display: table-cell;
@@ -563,6 +576,83 @@ color:#b99682;
   color:#fff8e4;
   
 }
+
+.cleft {
+	  display: block;
+	  margin-bottom: 0px;
+	  font-size: 16px;
+	  font-weight: normal;
+	  color: #bfbfbf;
+	  text-align:right;
+	  position:relative;
+	  top:18px;
+	  color:#b99682;
+	  left:-5%;
+
+}
+
+.cright {
+	  display: block;
+	  margin-bottom: 0px;
+	  font-size: 16px;
+	  font-weight: normal;
+	  color: #bfbfbf;
+	  text-align:left;
+	  position:relative;
+	  top:18px;
+	  color:#b99682;
+	  left:5%;
+}
+
+
+@media (max-width: 1500px) {
+
+
+	.tlefth:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				right:-10%;
+				top: 38px;
+				background: #b99682;       /*宽和高做出来的背景横线*/
+				width: 40%;
+				height: 2px;
+				z-index:-1;
+	}
+	.trighth:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				left:-10%;
+				top: 38px;
+				background: #b99682;       /*宽和高做出来的背景横线*/
+				width: 40%;
+				height: 2px;
+				z-index:-1;
+	}
+	.tleft:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				right:-10%;
+				top: 16px;
+				background: #b99682;       /*宽和高做出来的背景横线*/
+				width: 40%;
+				height: 2px;
+				z-index:-1;
+	}
+	.tright:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				left:-10%;
+				top: 16px;
+				background: #b99682;       /*宽和高做出来的背景横线*/
+				width: 40%;
+				height: 2px;
+				z-index:-1;
+	}
+
+
+}
+
+
 @media (max-width: 768px) {
 
 
@@ -600,16 +690,7 @@ color:#b99682;
 	  left:-8px;
 	}
 
-	.timeline-body > p,
-	.timeline-body > ul {
-	  margin-bottom: 0;
-	  color:#b99682;
-	}
 
-	.timeline-body > p + p {
-	  margin-top: 5px;
-		
-	}
 
 
 }
@@ -651,17 +732,6 @@ color:#b99682;
 	  left:-15%;
 	}
 
-	.timeline-body > p,
-	.timeline-body > ul {
-	  margin-bottom: 0;
-	  color:#b99682;
-	  margin-right:10%;
-	}
-
-	.timeline-body > p + p {
-	  margin-top: 5px;
-		
-	}
 
 
 }
@@ -1355,6 +1425,8 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+  position:relative;
+
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -1415,3 +1487,14 @@ h1 span{color:#b99682;}
 .cd-search-trigger{background:#b99682;}
 .navbar-default .navbar-toggle{border-color:#b99682;background:#b99682;}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background:#b99682;}
+
+
+p{
+	margin-left:50px;	
+	margin-right:50px;		
+}
+
+span cleft{
+	
+	text-align:right;
+}
