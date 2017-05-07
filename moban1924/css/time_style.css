@@ -414,7 +414,7 @@
 }
 @media screen and (max-width: 768px) {
   .timeline .timeline-heading {
-    margin-bottom: 35px;
+    margin-bottom: 5px;
 
   }
 }
@@ -434,7 +434,7 @@
 @media screen and (max-width: 768px) {
   .timeline .timeline-heading > div h3 {
     float: left;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 .timeline > li {
@@ -569,7 +569,7 @@ color:#b18a76;
 					content: '';                 /*CSS伪类用法*/
 				position: absolute;         /*定位背景横线的位置*/
 				left:-15%;
-				top: 35%;
+				top: 29%;
 				background: #b18a76;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
@@ -620,7 +620,7 @@ color:#b18a76;
 					content: '';                 /*CSS伪类用法*/
 				position: absolute;         /*定位背景横线的位置*/
 				left:-20%;
-				top: 29%;
+				top: 33px;
 				background: #b18a76;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
@@ -630,7 +630,7 @@ color:#b18a76;
 					content: '';                 /*CSS伪类用法*/
 				position: absolute;         /*定位背景横线的位置*/
 				left:-20%;
-				top: 44%;
+				top: 12px;
 				background: #b18a76;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
