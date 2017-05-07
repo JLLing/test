@@ -562,51 +562,108 @@ color:#b18a76;
   color:#fff8e4;
   
 }
+@media (max-width: 768px) {
 
-.timeline-title_highlight:after{
-	            content: '';                 /*CSS伪类用法*/
-            position: absolute;         /*定位背景横线的位置*/
-			left:-10%;
-            top: 35%;
-            background: #b18a76;       /*宽和高做出来的背景横线*/
-            width: 30%;
-            height: 2px;
-			z-index:-1;
-}
-.timeline-title:after{
-	            content: '';                 /*CSS伪类用法*/
-            position: absolute;         /*定位背景横线的位置*/
-			left:-10%;
-            top: 46%;
-            background: #b18a76;       /*宽和高做出来的背景横线*/
-            width: 30%;
-            height: 2px;
-			z-index:-1;
+
+	.timeline-title_highlight:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				left:-15%;
+				top: 35%;
+				background: #b18a76;       /*宽和高做出来的背景横线*/
+				width: 35%;
+				height: 2px;
+				z-index:-1;
+	}
+	.timeline-title:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				left:-15%;
+				top: 46%;
+				background: #b18a76;       /*宽和高做出来的背景横线*/
+				width: 35%;
+				height: 2px;
+				z-index:-1;
+	}
+
+	.company {
+	  display: block;
+	  margin-bottom: 0px;
+	  font-size: 16px;
+	  font-weight: normal;
+	  color: #bfbfbf;
+	  text-align:left;
+	  position:relative;
+	  top:10px;
+	  color:#b18a76;
+	  left:-8px;
+	}
+
+	.timeline-body > p,
+	.timeline-body > ul {
+	  margin-bottom: 0;
+	  color:#b18a76;
+	}
+
+	.timeline-body > p + p {
+	  margin-top: 5px;
+		
+	}
+
+
 }
 
-.company {
-  display: block;
-  margin-bottom: 0px;
-  font-size: 16px;
-  font-weight: normal;
-  color: #bfbfbf;
-  text-align:left;
-  position:relative;
-  top:10px;
-  color:#b18a76;
-  left:-8px;
+@media (max-width: 487px) {
+
+
+	.timeline-title_highlight:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				left:-20%;
+				top: 29%;
+				background: #b18a76;       /*宽和高做出来的背景横线*/
+				width: 30%;
+				height: 2px;
+				z-index:-1;
+	}
+	.timeline-title:after{
+					content: '';                 /*CSS伪类用法*/
+				position: absolute;         /*定位背景横线的位置*/
+				left:-20%;
+				top: 44%;
+				background: #b18a76;       /*宽和高做出来的背景横线*/
+				width: 30%;
+				height: 2px;
+				z-index:-1;
+	}
+
+	.company {
+	  display: block;
+	  margin-bottom: 0px;
+	  font-size: 16px;
+	  font-weight: normal;
+	  color: #bfbfbf;
+	  text-align:left;
+	  position:relative;
+	  top:10px;
+	  color:#b18a76;
+	  left:-15%;
+	}
+
+	.timeline-body > p,
+	.timeline-body > ul {
+	  margin-bottom: 0;
+	  color:#b18a76;
+	}
+
+	.timeline-body > p + p {
+	  margin-top: 5px;
+		
+	}
+
+
 }
 
-.timeline-body > p,
-.timeline-body > ul {
-  margin-bottom: 0;
-  color:#b18a76;
-}
-
-.timeline-body > p + p {
-  margin-top: 5px;
-  	
-}
 
 @media (max-width: 992px) {
   ul.timeline:before {
