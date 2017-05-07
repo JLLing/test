@@ -422,7 +422,7 @@
 .timeline .timeline-heading > div h3 {
   display: inline-block;
   padding: 7px 15px;
-  font-size: 18px;
+  font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
@@ -551,7 +551,7 @@
   background-position:center center;
   background-repeat:no-repeat;
   position:relative;
-	margin-top:3px;
+
 color:#b99682;
 }
 
@@ -621,7 +621,7 @@ color:#b99682;
 					content: '';                 /*CSS伪类用法*/
 				position: absolute;         /*定位背景横线的位置*/
 				left:-20%;
-				top: 33px;
+				top: 38px;
 				background: #b99682;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
@@ -631,7 +631,7 @@ color:#b99682;
 					content: '';                 /*CSS伪类用法*/
 				position: absolute;         /*定位背景横线的位置*/
 				left:-20%;
-				top: 12px;
+				top: 16px;
 				background: #b99682;       /*宽和高做出来的背景横线*/
 				width: 35%;
 				height: 2px;
@@ -1393,3 +1393,25 @@ html{
 ::selection{
 	background:#b99682;
 }
+
+h3, .h3{
+	
+	padding:4px;
+}
+
+.w3_breadcrumb{
+	background:#b99682;
+	
+}
+
+.w3agile_footer_copy{background:#b99682;}
+
+a.mail{
+	color:#b99682;
+	
+}
+h1 span{color:#b99682;}
+
+.cd-search-trigger{background:#b99682;}
+.navbar-default .navbar-toggle{border-color:#b99682;background:#b99682;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background:#b99682;}
