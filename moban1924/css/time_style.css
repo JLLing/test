@@ -443,7 +443,7 @@
 }
 @media screen and (max-width: 768px) {
   .timeline > li {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
 }
 .timeline > li:before, .timeline > li:after {
@@ -654,6 +654,7 @@ color:#b18a76;
 	.timeline-body > ul {
 	  margin-bottom: 0;
 	  color:#b18a76;
+	  margin-right:10%;
 	}
 
 	.timeline-body > p + p {
