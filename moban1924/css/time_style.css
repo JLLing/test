@@ -391,6 +391,7 @@
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
+  background-color:rgba(253,252, 252, 0.8);
 }
 .timeline:before {
   top: 20px;
@@ -1357,3 +1358,13 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.map{
+	background-image:url(../images/map.png);
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:0px 0px;
+	
+	
+}
