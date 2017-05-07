@@ -2397,7 +2397,7 @@ a.icon.gp {
 	
 }
 @media (max-width:991px){
-	.spa-grid:nth-child(5),.spa-grid:nth-child(3) {
+	.spa-grid:nth-child(5),.spa-grid:nth-child(3),.spa-grid:nth-child(7) {
 		border: none;
 	}
 	.spa-grid {
