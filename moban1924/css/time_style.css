@@ -1359,14 +1359,23 @@ input[type="text"] {
 
 /*# sourceMappingURL=style.css.map */
 
+body{
+	
+	background:rgba(0,0,0,0);
+}
 
-.map{
+html{
 	background-image:url(../images/map.png);
 	
-	background-size:100% auto;
+	background-size:cover ;
 	background-position:0px 0px;
 	background-attachment:fixed;
 	
+}
+
+.featured, .team-section{
+	
+	background:rgba(0,0,0,0);
 }
 
 ::selection{
