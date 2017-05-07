@@ -414,7 +414,7 @@
 }
 @media screen and (max-width: 768px) {
   .timeline .timeline-heading {
-    margin-bottom: 5px;
+    margin-bottom: 35px;
 
   }
 }
@@ -622,7 +622,7 @@ color:#b18a76;
 				left:-20%;
 				top: 29%;
 				background: #b18a76;       /*宽和高做出来的背景横线*/
-				width: 30%;
+				width: 35%;
 				height: 2px;
 				z-index:-1;
 	}
@@ -632,7 +632,7 @@ color:#b18a76;
 				left:-20%;
 				top: 44%;
 				background: #b18a76;       /*宽和高做出来的背景横线*/
-				width: 30%;
+				width: 35%;
 				height: 2px;
 				z-index:-1;
 	}
