@@ -1319,7 +1319,7 @@ body{
 }
 
 html{
-	background-color:#26272b;
+	/*background-color:#26272b;*/
 	background-image:url(../images/role2.jpg);
 	
 	background-size:cover;
@@ -1332,7 +1332,7 @@ html{
 
 @media screen and (max-width: 480px) {
 	html{
-		background-color:#26272b;
+		/*background-color:#26272b;*/
 		background-image:url(../images/role1.jpg);
 		
 		background-size:100%;
