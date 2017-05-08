@@ -248,11 +248,11 @@
   
 }
   .col-md-12{
-	  width:50%;
+	  width:45%;
 	  
   }
   .col-md-offset-0{
-	  margin-left:50%;
+	  margin-left:53%;
 	  
   }
   @media screen and (max-width: 468px) {
