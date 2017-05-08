@@ -1437,7 +1437,7 @@ body{
 }
 
 html{
-	background-image:url(../images/map.jpg);
+	background-image:url(../images/role2.jpg);
 	
 	background-size:cover;
 	background-position:0px 0px;
@@ -1447,7 +1447,7 @@ html{
 
 @media screen and (max-width: 480px) {
 	html{
-		background-image:url(../images/map.jpg);
+		background-image:url(../images/role1.jpg);
 		
 		background-size:100%;
 		background-position:0px center;
