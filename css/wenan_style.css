@@ -1437,20 +1437,22 @@ body{
 }
 
 html{
+	background-color:#26272b;
 	background-image:url(../images/role2.jpg);
 	
 	background-size:cover;
-	background-position:0px 0px;
+	background-position:0px -7%;
 	background-attachment:fixed;
 	
 }
 
 @media screen and (max-width: 480px) {
 	html{
+		background-color:#26272b;
 		background-image:url(../images/role1.jpg);
 		
 		background-size:100%;
-		background-position:0px center;
+		background-position:0px 30%;
 		background-attachment:fixed;
 		
 	}
