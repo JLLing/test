@@ -1443,7 +1443,7 @@ html{
 	background-size:cover;
 	background-position:0px -7%;
 	background-attachment:fixed;
-	
+	background-repeat:no-repeat;
 }
 
 @media screen and (max-width: 480px) {
@@ -1454,7 +1454,7 @@ html{
 		background-size:100%;
 		background-position:0px 30%;
 		background-attachment:fixed;
-		
+		background-repeat:no-repeat;
 	}
 }
 
