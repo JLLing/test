@@ -1,7 +1,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-<title>鼠标移动到文字上出现提示特效</title>
+<script type="text/javascript" src="clothes_data.js"></script>
+<title>衣服分布</title>
 </head>
 <body>
 <script>
@@ -25,16 +26,40 @@ var evt=event||window.event;
 function mout(){
 $('ts').style.display='none';
 }
+
 </script>
-<p>
-<a href="#" onMouseMove="mmove('10001<br>默认粉毛<br>已收录')" onMouseOut="mout();"><img src="circle/cIn.png"></a>
-<a href="#" onMouseMove="mmove('10002<br><br>未出现')" onMouseOut="mout();"><img src="circle/cNull.png"></a>
-<a href="#" onMouseMove="mmove('10003<br><br>未出现')" onMouseOut="mout();"><img src="circle/cNull.png"></a>
-<a href="#" onMouseMove="mmove('10004<br>运动少年<br>可获取')" onMouseOut="mout();"><img src="circle/cGet.png"></a>
-<a href="#" onMouseMove="mmove('10005<br>不羁<br>已收录')" onMouseOut="mout();"><img src="circle/cIn.png"></a>
-<a href="#" onMouseMove="mmove('10006<br>全民偶像<br>外服可获取')" onMouseOut="mout();"><img src="circle/cOGet.png"></a>
-<a href="#" onMouseMove="mmove('10007<br>眷雅公子<br>外服已收录')" onMouseOut="mout();"><img src="circle/cOIn.png"></a>
-<a href="#" onMouseMove="mmove('10008<br>邻家哥哥<br>无获取途径')" onMouseOut="mout();"><img src="circle/cNo.png"></a>
-</p>
+<div id="txt">
+	<!--<a href="#" onMouseMove="mmove('10001<br>默认粉毛<br>已收录')" onMouseOut="mout();"><img src="circle/cIn.png"></a>
+	<a href="#" onMouseMove="mmove('10002<br><br>未出现')" onMouseOut="mout();"><img src="circle/cNull.png"></a>
+	<a href="#" onMouseMove="mmove('10003<br><br>未出现')" onMouseOut="mout();"><img src="circle/cNull.png"></a>
+	<a href="#" onMouseMove="mmove('10004<br>运动少年<br>可获取')" onMouseOut="mout();"><img src="circle/cGet.png"></a>
+	<a href="#" onMouseMove="mmove('10005<br>不羁<br>已收录')" onMouseOut="mout();"><img src="circle/cIn.png"></a>
+	<a href="#" onMouseMove="mmove('10006<br>全民偶像<br>外服可获取')" onMouseOut="mout();"><img src="circle/cOGet.png"></a>
+	<a href="#" onMouseMove="mmove('10007<br>眷雅公子<br>外服已收录')" onMouseOut="mout();"><img src="circle/cOIn.png"></a>
+	<a onMouseMove='mmove(&quot;10008<br>邻家哥哥<br>无获取途径&quot;)' onMouseOut='mout();'><img src='circle/cNo.png'></a>-->
+</div>
 </body>
+<script>
+
+//未出现		空	cNull	name为空
+//不可获取		红	cNo		name不为空，state为无获取
+//可获取		橙	cGet	name不为空，state为空
+//已收录		绿	cIn		name不为空，state为已收录
+//外服可获取	灰	cOGet	name不为空，area不为空，state为空
+//外服已收录	蓝	cOIn	name不为空，area不为空，state为已收录
+//外服不可获取	未定
+
+function init(){
+	var txt = "";
+	for(var i=0; i < clothes_data.length ;i++){
+		
+		//document.getElementById("txt").innerHTML += "<a onMouseMove='mmove(&quot;"+clothes_data[i].string+"&quot;)' onMouseOut='mout();'><img src='circle/"+clothes_data[i].pic+".png'></a>";
+	
+		 txt += "<a onMouseMove='mmove(&quot;"+clothes_data[i].string+"&quot;)' onMouseOut='mout();'><img src='circle/"+clothes_data[i].pic+".png'></a>";
+	}
+	document.getElementById("txt").innerHTML += txt;
+}
+init();
+
+</script>
 </html>
