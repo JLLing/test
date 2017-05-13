@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)file:///C:/Users/%E9%9C%84/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/SegmentFault.html -->
+<html lang="zh-CN">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="alexaVerifyID" content="LkzCRJ7rPEUwt6fVey2vhxiw1vQ">
+    <meta name="apple-itunes-app" content="app-id=958101793, app-argument=">
+    <title>SegmentFault</title>
+
+    <meta name="msapplication-TileColor" content="#009a61">
+
+    <link rel="stylesheet" href="./SegmentFault_files/global.css">
+	<script type="text/javascript" src="update_data.js"></script>
+	&emsp;&emsp;页内跳转：	&emsp;<a href="#A">A</a>&emsp;<a href="#B">B</a>&emsp;<a href="#C">C</a>&emsp;<a href="#D">D</a>
+				&emsp;<a href="#E">E</a>&emsp;<a href="#F">F</a>&emsp;<a href="#G">G</a>&emsp;<a href="#H">H</a>&emsp;<a href="#I">I</a>
+				&emsp;<a href="#J">J</a>&emsp;<a href="#K">K</a>&emsp;<a href="#L">L</a>&emsp;<a href="#M">M</a>&emsp;<a href="#N">N</a>
+
+    <div class="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9 main">
+            <div id="txt" class="stream-list question-stream">
+
+            </div>
+          </div>
+          <!-- /.main --></div>
+      </div>
+    </div>
+    </body>
+
+
+  <script>
+ 
+	var kingdom1= new Array( "苹果联邦","莉莉斯王国","云端帝国","北地王国","荒原共和国","废墟孤岛","信鸽王国" );
+	var kingdom2= new Array( "apple","lilith","yunduan","north","wasteland","ruin","pigeon" );
+	var kingdom3= new Array( "苹果","莉莉斯","云端","北地","荒原","废墟","信鸽" );
+	var sortlist = new Array(3);
+// alert();
+	for(var i=0; i<update_data.length; i++){
+		sortlist[i]=update_data[i].pinyin +"-"+ update_data[i].id;
+	}
+sortlist.sort();
+	
+	
+	var flag=0;
+	for(var j=0; j<update_data.length; j++){
+		
+		if(String.fromCharCode((65+flag))<sortlist[j] ) {
+			document.getElementById("txt").innerHTML += "<a id='"+String.fromCharCode((65+flag)) + "'></a>";
+			flag++;
+		}
+		i=sortlist[j].replace(/[\s\S]*?-/, "");
+		var txt="";
+		var k=0;
+		
+		if(update_data[i].cate1=="套装整理" && update_data[i].cate2=="七大国纪" ){
+			
+			for(k=0;k<7;k++){
+				if(update_data[i].cate3==kingdom1[k]) break;
+			}
+			txt += "<section class='stream-list__item'>";
+			txt += "<div class='qa-rank'><div class='"+kingdom2[k]+" answers answered'>"+kingdom3[k]+"</div></div>";
+			txt += "<div class='summary'><h2 class='title'><a href='"+update_data[i].link+"'>"+update_data[i].title+"</a></h2>";
+			txt += "<ul class='taglist--inline ib'>";
+			if(update_data[i].keyword!=""){
+				var tag = update_data[i].keyword.split(',');
+				for(var l=0;l<tag.length;l++){
+					txt += "<li class='tagPopup'><a  class='tag tag-sm'>"+tag[l]+"</a></li>";
+				}
+				
+			}
+			txt += "</ul><ul class='author list-inline'><li><span>";
+			txt += update_data[i].sub +" "+ update_data[i].time;
+			txt += "</span></li></ul></div></section>";
+			document.getElementById("txt").innerHTML += txt;
+		
+		}
+	}
+
+	
+</script>	
+	
+</html>
