@@ -35,9 +35,9 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: "Microsoft Yahei", sans-serif;
+  font-size: 16px;
+  line-height: 1.43;
   color: #333333;
   background-color: #fff;
 }
@@ -52,11 +52,11 @@ UNUSEDtextarea {
 }
 
 a {
-  color: #009a61;
+  color: #e9706e;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #004e31;
+  color: #222;
   text-decoration: underline;
 }
 a:focus {
@@ -104,7 +104,7 @@ UNUSED.h6 .small {
   color: #777777;
 }
 
-h1, .h1,
+
 h2, .h2,
 h3, .h3 {
   margin-top: 21px;
@@ -400,6 +400,7 @@ pre {
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
+	
   }
 }
 .container-fluid:before, .container-fluid:after {
@@ -478,8 +479,17 @@ UNUSED.col-xs-1, UNUSED.col-sm-1, UNUSED.col-md-1, UNUSED.col-lg-1, UNUSED.col-x
 }
 
 .col-xs-12 {
+  width: 90%;
+  
+}
+
+@media screen and (max-width: 640px) {
+	.col-xs-12 {
   width: 100%;
 }
+	
+}
+	
 UNUSED.table > thead > tr > th,
 UNUSED.table > thead > tr > td,
 UNUSED.table > tbody > tr > th,
@@ -1246,6 +1256,14 @@ UNUSED.badge--copper .badge__icon, UNUSED.badge--bronze .badge__icon {
 
 .stream-list {
   margin-bottom: 10px;
+  padding-left:13%;
+}
+
+@media (max-width: 768px) {
+.stream-list {
+  margin-bottom: 10px;
+  padding-left:0%;
+}
 }
 
 .stream-list__item {
@@ -1282,6 +1300,7 @@ UNUSED.badge--copper .badge__icon, UNUSED.badge--bronze .badge__icon {
   overflow: auto;
   overflow-x: hidden;
     padding-top:6px;
+	text-align:left;
 }
 
 .qa-rank, UNUSED.bookmark-rank {
@@ -1417,3 +1436,29 @@ UNUSED.bookmark-rank .followers {
 	font-size:12px;
 }
 
+.container{
+	
+	text-align:letf;
+}
+
+
+div.FirstWord{
+	text-align:center;
+	
+}
+@media (min-width: 768px) {
+div.FirstWord{
+	margin-top:1em;
+	
+}
+}
+
+.featured, .team-section{
+	
+	background:#fff;
+}
+
+.w3_breadcrumb{
+	height:47.6px;
+	
+}

@@ -59,7 +59,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 200px!important;
+    min-height: 0px!important;
 }
 .banner-inner-dott {
     background: url(../images/dots.png)repeat 0px 0px;
@@ -149,7 +149,7 @@
 	}
 
 	.banner-inner {
-		min-height: 163px!important;
+		min-height: 0px!important;
 	}
 	.zs-enabled .zs-slideshow .zs-bullets .zs-bullet {
 		display: inline-block;

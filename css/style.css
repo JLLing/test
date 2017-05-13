@@ -205,12 +205,31 @@ p.s-log {
     line-height: 1px;
     text-align: right;
     font-weight: 300;
-    letter-spacing: 4px;
+    letter-spacing: 4.5px;
 	position:relative;
-	top:0px;
-
+	top:-10px;
     font-size: 0.3em;
 }
+
+
+@media (max-width:1024px){
+	p.s-log {
+	    letter-spacing: 2px;
+		top:-5px;
+	}
+}
+
+@media (max-width:640px){
+	p.s-log {
+	    letter-spacing: 2.5px;
+		top:-5px;
+		left:1px;
+	}
+}
+
+
+
+
 /*-- //nav --*/
 /*-- search --*/
 .cd-main-header {
@@ -705,8 +724,10 @@ a.read:hover {
 }
 .spa-agile {
     text-align: center;
-    margin: 4em auto;
+    margin: auto;
 	width:80%;
+	position:relative;
+	top:-20px;
 }
 .spa-grid {
     border-right: 1px solid #999;
@@ -2406,7 +2427,7 @@ a.icon.gp {
 		width: 50%;
 	}
 	.spa-grid.lost {
-		margin-top: 2em;
+		margin-top: 0em;
 	}
 	.team-grids {
 		text-align: center;
@@ -2795,7 +2816,7 @@ a.icon.gp {
 }
 @media (max-width:568px){
 	.special, #news, .w3_content_agilleinfo_inner, .team-section, .plans-section, .w3l_contact-bottom {
-		padding: 2.5em 0;
+		padding: 1em 0;
 	}
 	.w3ls-special-text:after {
 		pointer-events: none;
@@ -2874,7 +2895,7 @@ a.icon.gp {
 		position: absolute;
 		display: inline-block;
 		top: -58px;
-		right: 50px;
+
 	}
 	.baner-info h3 {
 		font-size: 1.8em;
