@@ -219,14 +219,22 @@ p.s-log {
 	}
 }
 
-@media (max-width:640px){
+
+@media (max-width:800px){
+	p.s-log {
+	    letter-spacing: 3px;
+		top:-15px;
+		left:-3px;
+	}
+}
+
+@media (max-width:480px){
 	p.s-log {
 	    letter-spacing: 2.5px;
 		top:-5px;
 		left:1px;
 	}
 }
-
 
 
 
@@ -2691,7 +2699,7 @@ a.icon.gp {
 	.cd-header-buttons {
 		position: absolute;
 		display: inline-block;
-		top: -71px;
+		top: -90px;
 		right: 0;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -2894,7 +2902,7 @@ a.icon.gp {
 	.cd-header-buttons {
 		position: absolute;
 		display: inline-block;
-		top: -58px;
+		top: -65px;
 
 	}
 	.baner-info h3 {
