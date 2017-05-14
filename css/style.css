@@ -214,8 +214,9 @@ p.s-log {
 
 @media (max-width:1024px){
 	p.s-log {
-	    letter-spacing: 2px;
-		top:-5px;
+	    letter-spacing: 3.5px;
+		top:-12px;
+		left:-5px;
 	}
 }
 

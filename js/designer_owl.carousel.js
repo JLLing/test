@@ -1413,7 +1413,7 @@ if ( typeof Object.create !== "function" ) {
 		itemsDesktopSmall : [979,3],
 		itemsTablet : [768,2],
 		itemsTabletSmall : false,
-		itemsMobile : [479,1],
+		itemsMobile : [479,2],
 		singleItem : false,
 		itemsScaleUp : false,
 
