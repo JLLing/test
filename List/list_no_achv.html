@@ -42,7 +42,7 @@
 								<nav class="navbar navbar-default">
 									<div class="navbar-header">
 										
-										<h1><a  href="index.html"><span>文</span>案整理  <p class="s-log">Miracle Nikki</p></a>
+										<h1><a  href="../index.html"><span>文</span>案整理  <p class="s-log">Miracle Nikki</p></a>
 										 
 										</h1>
 									</div>
@@ -129,9 +129,9 @@
 		
   <script>
 
-	var kingdom1= new Array( "苹果联邦","莉莉斯王国","云端帝国","北地王国","荒原共和国","废墟孤岛","信鸽王国" );
-	var kingdom2= new Array( "apple","lilith","yunduan","north","wasteland","ruin","pigeon" );
-	var kingdom3= new Array( "苹果","莉莉斯","云端","北地","荒原","废墟","信鸽" );
+	var kingdom1= new Array( "月签到套装","商店套装","特殊套装","章节套装");
+	var kingdom2= new Array( "checkin","shop","special","chapter");
+	var kingdom3= new Array( "月签到","商店","特殊","章节");
 	var sortlist = new Array(3);
 		
 // alert();
@@ -153,7 +153,9 @@ sortlist.sort();
 		var k=0;
 		
 		if(update_data[i].cate1=="套装整理" && update_data[i].cate2=="非成就套装" ){
-			
+			for(k=0;k<4;k++){
+				if(update_data[i].cate3==kingdom1[k]) break;
+			}
 
 			txt += "<section class='stream-list__item'>";
 			txt += "<div class='qa-rank'><div class='"+kingdom2[k]+" answers answered'>"+kingdom3[k]+"</div></div>";

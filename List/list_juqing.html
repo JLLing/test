@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>外服专题</title>
+<title>主要剧情</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -42,7 +42,7 @@
 								<nav class="navbar navbar-default">
 									<div class="navbar-header">
 										
-										<h1><a  href="index.html"><span>文</span>案整理  <p class="s-log">Miracle Nikki</p></a>
+										<h1><a  href="../index.html"><span>文</span>案整理  <p class="s-log">Miracle Nikki</p></a>
 										 
 										</h1>
 									</div>
@@ -80,7 +80,7 @@
 			<ul>
 				<li><a href="../index.html">主页</a><i>//</i></li>
 
-				<li>外服专题</li>
+				<li>主要剧情</li>
 			</ul>
 		</div>
 	</div>
@@ -152,11 +152,11 @@ sortlist.sort();
 		var txt="";
 		var k=0;
 		
-		if(update_data[i].cate1=="外服"  ){
+		if(update_data[i].cate1=="主要剧情"  ){
 			
 
 			txt += "<section class='stream-list__item'>";
-			txt += "<div class='qa-rank'><div class='"+kingdom2[k]+" answers answered'>"+kingdom3[k]+"</div></div>";
+			txt += "<div class='qa-rank'><div class='"+kingdom2[k]+" answers answered'>"+update_data[i].cate2+"</div></div>";
 			txt += "<div class='summary'><h2 class='title'><a href='"+update_data[i].link+"'>"+update_data[i].title+"</a></h2>";
 			txt += "<ul class='taglist--inline ib'>";
 			if(update_data[i].keyword!=""){

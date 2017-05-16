@@ -1436,6 +1436,130 @@ UNUSED.bookmark-rank .followers {
 	font-size:12px;
 }
 
+
+.mlqj{
+	padding-top:55px;
+	background-image:url("mlqj.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#b5c1d9;
+	font-size:12px;
+}
+
+.jrsd{
+	padding-top:55px;
+	background-image:url("jrsd.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#e84c48;
+	font-size:12px;
+}
+
+.npc{
+	padding-top:55px;
+	background-image:url("npc.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#668283;
+	font-size:12px;
+}
+
+.m12{
+	padding-top:55px;
+	background-image:url("12m.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#984f29;
+	font-size:12px;
+}
+.mtfx{
+	padding-top:55px;
+	background-image:url("mtfx.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#827f98;
+	font-size:12px;
+}
+
+.siji{
+	padding-top:55px;
+	background-image:url("siji.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#80a83f;
+	font-size:12px;
+}
+.xiamo{
+	padding-top:55px;
+	background-image:url("xiamo.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#60b5c3;
+	font-size:12px;
+}
+.yongye{
+	padding-top:55px;
+	background-image:url("yongye.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#7f617a;
+	font-size:12px;
+}
+.yundian{
+	padding-top:55px;
+	background-image:url("yundian.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#bb924c;
+	font-size:12px;
+}
+
+.shop{
+	padding-top:55px;
+	background-image:url("shop.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#d58075;
+	font-size:12px;
+}
+.chapter{
+	padding-top:55px;
+	background-image:url("chapter.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#a67666;
+	font-size:12px;
+}
+.special{
+	padding-top:55px;
+	background-image:url("special.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#975f5d;
+	font-size:12px;
+}
+.checkin{
+	padding-top:55px;
+	background-image:url("checkin.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#fe8e8f;
+	font-size:12px;
+}
+
+
+
+
+
+.jp{
+	padding-top:55px;
+	background-image:url("jp.png");
+	background-repeat:no-repeat;
+	background-position:0 3px;
+	color:#121212;
+	font-size:12px;
+}
+
 .container{
 	
 	text-align:letf;

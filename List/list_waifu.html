@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>主要剧情</title>
+<title>外服专题</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -42,7 +42,7 @@
 								<nav class="navbar navbar-default">
 									<div class="navbar-header">
 										
-										<h1><a  href="index.html"><span>文</span>案整理  <p class="s-log">Miracle Nikki</p></a>
+										<h1><a  href="../index.html"><span>文</span>案整理  <p class="s-log">Miracle Nikki</p></a>
 										 
 										</h1>
 									</div>
@@ -80,7 +80,7 @@
 			<ul>
 				<li><a href="../index.html">主页</a><i>//</i></li>
 
-				<li>主要剧情</li>
+				<li>外服专题</li>
 			</ul>
 		</div>
 	</div>
@@ -129,9 +129,9 @@
 		
   <script>
 
-	var kingdom1= new Array( "苹果联邦","莉莉斯王国","云端帝国","北地王国","荒原共和国","废墟孤岛","信鸽王国" );
-	var kingdom2= new Array( "apple","lilith","yunduan","north","wasteland","ruin","pigeon" );
-	var kingdom3= new Array( "苹果","莉莉斯","云端","北地","荒原","废墟","信鸽" );
+	var kingdom1= new Array( "日服","莉莉斯王国","云端帝国","北地王国","荒原共和国","废墟孤岛","信鸽王国" );
+	var kingdom2= new Array( "jp","lilith","yunduan","north","wasteland","ruin","pigeon" );
+	var kingdom3= new Array( "日服专属","莉莉斯","云端","北地","荒原","废墟","信鸽" );
 	var sortlist = new Array(3);
 		
 // alert();
@@ -152,8 +152,10 @@ sortlist.sort();
 		var txt="";
 		var k=0;
 		
-		if(update_data[i].cate1=="主要剧情"  ){
-			
+		if(update_data[i].cate1=="外服"  ){
+			for(k=0;k<1;k++){
+				if(update_data[i].cate2==kingdom1[k]) break;
+			}
 
 			txt += "<section class='stream-list__item'>";
 			txt += "<div class='qa-rank'><div class='"+kingdom2[k]+" answers answered'>"+kingdom3[k]+"</div></div>";
