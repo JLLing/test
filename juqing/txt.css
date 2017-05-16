@@ -8,7 +8,7 @@ article.txt {
 	font-weight : 400;
 	font-size: 200%;
 	text-align:left;
-	width:420px;
+	height:200px;
 	border:0px;
 	background:none;
 	line-height: 1.3em;
@@ -21,55 +21,36 @@ article.txt {
 div.txt{
 	text-align:center;
 	margin:auto;
-	height:200px;
+	width:
 	display:table;
 	z-index:5;
 	position:relative;
-	top:-1000px;
-	padding-left:270px;
-	padding-right:270px;
+	padding-left:28%;
+	padding-right:28%;
 }
 
 .block{
-	height:200px;
-	width:960px;
+
+	width:100%;
 	margin:auto;
 	margin-top:3%;
 	margin-bottom:3%;
 	text-align:center;
 	overflow:hidden;
+	background-image:url('bg/bg102.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100%;
 }
 
 
-.bg{
+.img1{
 	width:100%;
-	
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100%;
 }
 
-.npcl{
-	position:relative;
-	top:-200px;
-	width:100%;
-	
-}
-
-.npcr{
-	position:relative;
-	top:-400px;
-	width:100%;
-}
-
-.name{
-	position:relative;
-	top:-600px;
-width:100%;
-}
-
-.bgw{
-	position:relative;
-	top:-800px;
-width:100%;
-}
 
 #text{
 	margin-top:3%;
@@ -77,6 +58,67 @@ width:100%;
 	width:100%;
 
 }
+@media (min-width:980px){
+	.block{
+
+		width:960px;
+
+	}
+}
+
+@media (max-width:980px){
+	article.txt {
+
+		font-size: 180%;
+
+	}
+}
+
+@media (max-width:900px){
+	article.txt {
+
+		font-size: 160%;
+
+	}
+}
+
+@media (max-width:800px){
+	article.txt {
+
+		font-size: 150%;
+
+	}
+}
+
+@media (max-width:750px){
+	article.txt {
+
+		font-size: 130%;
+
+	}
+}
+
+@media (max-width:700px){
+	article.txt {
+
+		font-size: 110%;
+
+	}
+}
+
+@media (max-width:650px){
+	article.txt {
+
+		font-size: 100%;
+
+	}
+}
 
 
+@media (max-width:600px){
+	article.txt {
 
+		font-size: 90%;
+
+	}
+}
