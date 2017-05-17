@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-<script type="text/javascript" src="clothes_data.js"></script>
+<script type="text/javascript" src="data/clothes_data.js"></script>
 <title>衣服分布</title>
 </head>
 <body>
@@ -56,7 +56,7 @@ function init(){
 		
 		//document.getElementById("txt").innerHTML += "<a onMouseMove='mmove(&quot;"+clothes_data[i].string+"&quot;)' onMouseOut='mout();'><img src='circle/"+clothes_data[i].pic+".png'></a>";
 	
-		 txt += "<a onMouseMove='mmove(&quot;"+clothes_data[i].string+"&quot;)' onMouseOut='mout();'><img src='circle/"+clothes_data[i].pic+".png'></a>";
+		 txt += "<a onMouseMove='mmove(&quot;"+clothes_data[i].string+"&quot;)' onMouseOut='mout();'><img src='images/circle/"+clothes_data[i].pic+".png'></a>";
 	}
 	document.getElementById("txt").innerHTML += txt;
 }
