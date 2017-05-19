@@ -117,14 +117,14 @@ div.txt{
 
 @media (max-width:600px){
 	article.txt {
-		height:90px;
+		height:95px;
 		font-size: 90%;
 
 	}
 }
 @media (max-width:550px){
 	article.txt {
-		height:90px;
+		height:95px;
 		font-size: 80%;
 
 	}
