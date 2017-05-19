@@ -122,3 +122,10 @@ div.txt{
 
 	}
 }
+@media (max-width:550px){
+	article.txt {
+		height:90px;
+		font-size: 80%;
+
+	}
+}
