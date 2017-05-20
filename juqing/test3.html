@@ -86,18 +86,23 @@
 			</ul>
 		</div>
 	</div>
-
-
+		<div id="choosseTask" class='block' style="background-image:url('../images/bg/taskname.png');" onclick="expand()">
+			<div id="chapterName">第一章 初到麦川</div>
+			<div id="taskName">1-1 运动少女奥萝（1）</div>
+			
+			
+			
+		</div>
 		<div id="text" >
-
+			
 		
 		
 		
 	
 
 		</div>
-
-
+		
+		
 			<!--//content-inner-section-->
  <!-- Footer -->
 	<div class='w3l-footer'>
@@ -120,7 +125,44 @@
 
 		
 	<script type='text/javascript' src='../data/juqing_data.js'></script>
-
+	<script>
+var clickflag=1;
+var taskname="1-1 运动少女奥萝（1）";
+var scale=1;
+var chapter_name="第一章 初到麦川";
+var taskString="<div id='chapterName'>" + chapter_name + "</div>	<div id='taskName'>" + taskname + "</div>";
+var chooseString="<div class='task'><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span></div>";
+function expand(){
+	if(clickflag==1){
+		//document.getElementById("choosseTask").innerHTML = "关卡1";
+		if(document.body.offsetWidth<960){
+			scale=document.body.offsetWidth/960;
+		}
+		else{
+			scale=1;
+		}
+		document.getElementById("choosseTask").style.height=400*scale + "px";
+		document.getElementById("choosseTask").style.backgroundImage="url('../images/bg/taskchoose.png')";
+		document.getElementById("choosseTask").innerHTML=chooseString;
+		clickflag--;
+	}
+	else{
+		//document.getElementById("choosseTask").innerHTML = "展开关卡";
+		if(document.body.offsetWidth<960){
+			scale=document.body.offsetWidth/960;
+		}
+		else{
+			scale=1;
+		}
+		document.getElementById("choosseTask").style.height=200*scale + "px";
+		document.getElementById("choosseTask").style.backgroundImage="url('../images/bg/taskname.png')";
+		document.getElementById("choosseTask").innerHTML=taskString;
+		clickflag++;
+	}
+	
+}
+	
+	</script>	
 	<script>
 
 		var txt = document.getElementById("text").innerHTML;
