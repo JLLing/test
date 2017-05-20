@@ -171,6 +171,16 @@ div.task{
 		margin:3px;
 		line-height:36px;
 	}
+	#chapterName{
+		padding-top:1.5%;
+		font-size: 230%;
+	}
+	#taskName{
+		font-size: 150%;
+	}
+	#choosseTask{
+		height:130px;
+	}
 }
 
 
@@ -203,5 +213,19 @@ div.task{
 		margin:3px;
 		line-height:23px;
 	}
+	div.task{
 
+		padding-top:3%;
+
+	}
+	#chapterName{
+		padding-top:1%;
+		font-size: 150%;
+	}
+	#taskName{
+		font-size: 100%;
+	}
+	#choosseTask{
+		height:100px;
+	}
 }
