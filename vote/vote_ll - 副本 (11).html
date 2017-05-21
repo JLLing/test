@@ -173,12 +173,6 @@
 		function init(){
 			document.getElementById("text").innerHTML = strques + stransh1 + answers[(flag-1)*2+0] + stranse + stransh2 + answers[(flag-1)*2+1] + stranse+hint;
 			document.getElementById("ques").innerHTML = questions[flag-1];
-			if(flag==1){
-							document.getElementById("lastpart").className="gray";
-				document.getElementById("lastpart").onclick= function(){};
-				document.getElementById("nextpart").className="normal";
-				document.getElementById("nextpart").onclick= function(){next()};
-			}
 		}
 		function last(){
 			if(flag==5){
@@ -208,15 +202,7 @@
 			init();
 		}
 		function response(res){
-			
-			if(flag!=5){
-				document.getElementById("text").innerHTML = strques+ "<div class='block2'><div class='txt answer' onclick='init()'><article class='txt answer' >再选一次</article></div></div><div class='block2'><div class='txt answer' onclick='next()'><article class='txt answer' >下一个问题！</article></div></div><br>";
-			}
-			else{
-				flag=1;
-				document.getElementById("text").innerHTML = strques+ "<div class='block2'><div class='txt answer' onclick='init()'><article class='txt answer' >再选一次</article></div></div><div class='block2'><div class='txt answer' onclick='init()'><article class='txt answer' >重头来过！</article></div></div><br>";
-
-			}
+			document.getElementById("text").innerHTML = strques+ "<div class='block2'><div class='txt answer' onclick='init()'><article class='txt answer' >再选一次</article></div></div><br>";
 			document.getElementById("ques").innerHTML = responses[(flag-1)*2+res] ;
 		}
 		</script>
