@@ -202,7 +202,7 @@
 			init();
 		}
 		function response(res){
-			document.getElementById("text").innerHTML = strques+ "<br><br><br><br><br><br><br>";
+			document.getElementById("text").innerHTML = strques+ "<div class='block2'><div class='txt answer' onclick='init()'><article class='txt answer' >再选一次</article></div></div><br><br><br><br><br>";
 			document.getElementById("ques").innerHTML = responses[(flag-1)*2+res] ;
 		}
 		</script>
