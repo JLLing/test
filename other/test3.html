@@ -86,17 +86,25 @@
 			</ul>
 		</div>
 	</div>
-		<div id="main">
-			<!--<div id='chapter'><div class='block'><img width='100%'src='../images/chapter/c01.jpg'></div><div class='block'><img width='100%' src='../images/chapter/c02.jpg'></div><div class='block'><img width='100%' src='../images/chapter/c03.jpg'></div><div class='block'><img width='100%' src='../images/chapter/c04.jpg'></div></div>
+		<div id="jump1" class='block' > <img width="30%" src="../images/lastchapter.png"> <img width="30%" src="../images/choosechapter.png"> <img width="30%" src="../images/nextchapter.png"> </div>
+		
+		<div id="choosseTask" class='block' style="background-image:url('../images/bg/taskname.png');" onclick="expand()">
+			<div id="chapterName">第一章 初到麦川</div>
+			<div id="taskName">1-1 运动少女奥萝（1）</div>
+			
+			
+			
+		</div>
+		
+		<div id="text" >
+			
+		
+		
+		
+	
 
-			<div id='jump1'class='block'><img id='lastchapter'class='gray'src='../images/lastchapter.png'><img id='choosechapter'class='normal'src='../images/choosechapter.png'><img id='nextchapter'class='normal'src='../images/nextchapter.png'></div>-->
-			<div id="choosseTask" class='block' onclick="expand()"><div id="chapterName"></div><div id="taskName"></div></div>
-			<div id="text" ></div>
-			<!--<div id='jump2'class='block'><img id='lasttask'class='normal'src='../images/lasttask.png'><img id='choosetask'class='normal'src='../images/choosetask.png'><img id='nexttask'class='normal'src='../images/nexttask.png'></div>-->
-			
-			
-			
-		</div>	
+		</div>
+		<div id="jump2" class='block' > <img width="30%" src="../images/lasttask.png"> <img width="30%" src="../images/choosetask.png"> <img width="30%" src="../images/nexttask.png"> </div>
 		
 			<!--//content-inner-section-->
  <!-- Footer -->
@@ -127,7 +135,6 @@ var scale=1;
 var chapter_name="第一章 初到麦川";
 var taskString="<div id='chapterName'>" + chapter_name + "</div>	<div id='taskName'>" + taskname + "</div>";
 var chooseString="<div class='task'><span class='task'>18-1-13</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>18-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span></div>";
-
 function expand(){
 	if(clickflag==1){
 		//document.getElementById("choosseTask").innerHTML = "关卡1";
@@ -188,6 +195,10 @@ expand();
 		
 		}
 
+		
+		
+
+		
 		document.getElementById("text").innerHTML = txt;
 		
 		

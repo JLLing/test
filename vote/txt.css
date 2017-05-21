@@ -26,7 +26,7 @@ div.txt{
 	z-index:5;
 	position:relative;
 	padding-left:28%;
-	padding-right:28%;
+	padding-right:9%;
 }
 
 .block{
@@ -43,6 +43,20 @@ div.txt{
 	background-size:100%;
 }
 
+.block2{
+
+	width:100%;
+	margin:auto;
+	margin-top:1%;
+	margin-bottom:3%;
+	text-align:center;
+	overflow:hidden;
+	background-image:url('../images/bg/npcAnswer.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
 
 .img1{
 	width:100%;
@@ -51,6 +65,14 @@ div.txt{
 	background-size:100%;
 }
 
+.img2{
+	height:100%;
+	background-position:5%;
+	background-repeat:no-repeat;
+	background-size:24% 110%;
+}
+
+
 .gray { 
 -webkit-filter: grayscale(100%); 
 -moz-filter: grayscale(100%); 
@@ -58,7 +80,7 @@ div.txt{
 -o-filter: grayscale(100%); 
 filter: grayscale(100%); 
 filter: gray; 
-width:30%;
+	width:30%;
 } 
 
 .normal{
@@ -68,7 +90,7 @@ width:30%;
 #text{
 
 	width:100%;
-
+	padding-top:4%;
 }
 
 
@@ -135,12 +157,20 @@ div.task{
 
 }
 
+div.answer{
+	padding-left:20%;
+	padding-right:20%;
+	
+}
 
 @media (min-width:980px){
 	.block{
 
 		width:960px;
 
+	}
+			article.answer {
+		height:150px;
 	}
 	
 }
@@ -151,6 +181,9 @@ div.task{
 		font-size: 180%;
 
 	}
+		article.answer {
+		height:140px;
+	}
 }
 
 @media (max-width:900px){
@@ -158,6 +191,9 @@ div.task{
 		height:160px;
 		font-size: 160%;
 
+	}
+		article.answer {
+		height:130px;
 	}
 }
 
@@ -167,6 +203,9 @@ div.task{
 		font-size: 150%;
 
 	}
+		article.answer {
+		height:120px;
+	}
 }
 
 @media (max-width:750px){
@@ -174,6 +213,9 @@ div.task{
 		height:130px;
 		font-size: 130%;
 
+	}
+		article.answer {
+		height:110px;
 	}
 }
 
@@ -183,6 +225,9 @@ div.task{
 		font-size: 110%;
 
 	}
+		article.answer {
+		height:100px;
+	}
 }
 
 @media (max-width:650px){
@@ -190,6 +235,9 @@ div.task{
 		height:100px;
 		font-size: 100%;
 
+	}
+		article.answer {
+		height:90px;
 	}
 	span.task{
 		background-size:100%;
@@ -218,6 +266,9 @@ div.task{
 		font-size: 90%;
 
 	}
+		article.answer {
+		height:75px;
+	}
 	span.task{
 		background-size:100%;
 		font-size: 92%;
@@ -232,6 +283,9 @@ div.task{
 		height:95px;
 		font-size: 80%;
 
+	}
+	article.answer {
+		height:60px;
 	}
 	span.task{
 		background-size:100%;
