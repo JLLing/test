@@ -90,9 +90,9 @@
 			<!--<div id='chapter'><div class='block'><img width='100%'src='../images/chapter/c01.jpg'></div><div class='block'><img width='100%' src='../images/chapter/c02.jpg'></div><div class='block'><img width='100%' src='../images/chapter/c03.jpg'></div><div class='block'><img width='100%' src='../images/chapter/c04.jpg'></div></div>
 
 			<div id='jump1'class='block'><img id='lastchapter'class='gray'src='../images/lastchapter.png'><img id='choosechapter'class='normal'src='../images/choosechapter.png'><img id='nextchapter'class='normal'src='../images/nextchapter.png'></div>-->
-			<div id="choosseTask" class='block' onclick="expand()"><div id="chapterName"></div><div id="taskName"></div></div>
-			<div id="text" ></div>
-			<!--<div id='jump2'class='block'><img id='lasttask'class='normal'src='../images/lasttask.png'><img id='choosetask'class='normal'src='../images/choosetask.png'><img id='nexttask'class='normal'src='../images/nexttask.png'></div>-->
+			<!--<div id="choosseTask" class='block' onclick="expand()"><div id="chapterName"></div><div id="taskName"></div></div>
+			<div id="text" ></div>-->
+			<!--<div id='jump2'class='block'><span id='clicknextT'onclick=funNull()><img id='lasttask'class='normal'src='../images/lasttask.png'></span><span id='clicknextT'onclick=funNull()><img id='choosetask'class='normal'src='../images/choosetask.png'></span><span id='clicknextT'onclick=funNull()><img id='nexttask'class='normal'src='../images/nexttask.png'></span></div>-->
 			
 			
 			
@@ -120,14 +120,89 @@
 
 		
 	<script type='text/javascript' src='../data/juqing_data.js'></script>
+	<script type='text/javascript' src='../data/task_data.js'></script>
+	<script type='text/javascript' src='../data/chapter_data.js'></script>
 	<script>
 var clickflag=1;
-var taskname="1-1 运动少女奥萝（1）";
 var scale=1;
-var chapter_name="第一章 初到麦川";
-var taskString="<div id='chapterName'>" + chapter_name + "</div>	<div id='taskName'>" + taskname + "</div>";
-var chooseString="<div class='task'><span class='task'>18-1-13</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>18-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span><span class='task'>8-支3</span></div>";
+var chapterName = "";
+var chapterNum = 0;
+var chooseBool=0;
+var chooseString="";
+initChapter();
+function initChapter(){
+	var strChapter = "<div id='chapter'>";
+	
+	for(var i=0; i<chapter.length;i++){
+		if(chapter[i].id[1]=='X'){
+			strChapter += "<div class='block' onclick=initTask('" + i + "')><img width='100%'src='../images/chapter/"+ chapter[i].id +".jpg'></div>";
+		}
+	}
+	strChapter += "</div>";
+	document.getElementById("main").innerHTML = strChapter;
+	
+}
 
+function initTask(num){
+	num=parseInt(num);
+	chapterNum=num;
+	
+	chapterName = chapter[chapterNum].name;
+	var i=0;
+	//alert(chapter[num].id);
+	for(;i<task.length;i++){
+		if(task[i].id==chapter[chapterNum].id+"01"){
+			//alert(task[0].id.substring(0,4));
+			taskName = toTaskNum(task[i].id) + " " + task[i].name;
+			break;
+		}
+	}
+	
+	
+	chooseString="<div class='task'>";
+	for(var j=i;j<task.length;j++){
+		
+		if(task[j].id.substring(0,4)!=chapter[chapterNum].id) break;
+		//alert(chapterNum);
+		chooseString+="<span class='task' onclick='initDialog(" + chapterNum + "," + (j-i) + ",2)'>"+toTaskNum(task[j].id)+"</span>";
+				
+	}
+		chooseString += "</div>";
+		
+		
+
+	document.getElementById("main").innerHTML ="<div id='jump1'class='block'><span id='clicklastC'onclick=funNull()><img id='lastchapter'class='normal'src='../images/lastchapter.png'></span><span id='clickchoose'onclick=initChapter()><img id='choosechapter'class='normal'src='../images/choosechapter.png'></span><span id='clicknextC'onclick=funNull()><img id='nextchapter'class='normal'src='../images/nextchapter.png'></span></div><div id='choosseTask'class='block'onclick='expand()'><div id='chapterName'></div><div id='taskName'></div></div><div id='text'></div><div id='jump2'class='block'><span id='clicklastT'onclick=funNull()><img id='lasttask'class='normal'src='../images/lasttask.png'></span><span id='clickchooseT'onclick=expand()><img id='choosetask'class='normal'src='../images/choosetask.png'></span><span id='clicknextT'onclick=funNull()><img id='nexttask'class='normal'src='../images/nexttask.png'></span></div>";
+	//alert(num);
+	if(chapterNum==0){
+		document.getElementById("lastchapter").className="gray";
+		document.getElementById("nextchapter").className="normal";
+		document.getElementById("clicklastC").onclick= function(){""};
+		document.getElementById("clicknextC").onclick= function(){initTask(chapterNum+1);};
+		
+	}
+	else if(chapterNum>=17){
+		
+		document.getElementById("lastchapter").className="normal";
+		document.getElementById("nextchapter").className="gray";
+		document.getElementById("clicklastC").onclick= function(){initTask(chapterNum-1);};
+		document.getElementById("clicknextC").onclick= function(){""};
+	}
+	else{
+		document.getElementById("lastchapter").className="normal";
+		document.getElementById("nextchapter").className="normal";
+		document.getElementById("clicklastC").onclick= function(){initTask(chapterNum-1);};
+		document.getElementById("clicknextC").onclick= function(){initTask(chapterNum+1);};
+		
+	}
+	
+	
+	document.getElementById("chapterName").innerHTML = chapterName;
+	document.getElementById("taskName").innerHTML = taskName;
+	initDialog(i,0,1);
+	
+}
+function last(num){alert(num);}
+function funNull(){}
 function expand(){
 	if(clickflag==1){
 		//document.getElementById("choosseTask").innerHTML = "关卡1";
@@ -152,27 +227,79 @@ function expand(){
 		}
 		document.getElementById("choosseTask").style.height=200*scale + "px";
 		document.getElementById("choosseTask").style.backgroundImage="url('../images/bg/taskname.png')";
-		document.getElementById("choosseTask").innerHTML=taskString;
+		document.getElementById("choosseTask").innerHTML="<div id='chapterName'></div><div id='taskName'></div></div>";
+		document.getElementById("chapterName").innerHTML = chapterName;
+		document.getElementById("taskName").innerHTML = taskName;
 		clickflag++;
 	}
-	
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
-	
-expand();
-expand();	
+
+
+	function initexpand(){
+			if(document.body.offsetWidth<960){
+				scale=document.body.offsetWidth/960;
+			}
+			else{
+				scale=1;
+			}
+			document.getElementById("choosseTask").style.height=200*scale + "px";
+			document.getElementById("chapterName").innerHTML = chapterName;
+			document.getElementById("taskName").innerHTML = taskName;
+
+	}
+initexpand();
+
 	
 	</script>	
 	<script>
+	function initDialog(chapnum,tasknum,type){
+		initexpand();
+		//alert(parseInt(beginId.substring(4,2)));
+		for(var k=0;k<task.length;k++){
 
-		var txt = document.getElementById("text").innerHTML;
+			if(task[k].id.substring(0,4)==chapter[chapterNum].id){
+				chapnum=k;
+				
+				break;
+			}
+			
+		}
+		
+
+		tasknum=parseInt(tasknum);
+		beginId=task[chapnum+tasknum].id;
+		
+		taskName = toTaskNum(task[chapnum+tasknum].id) + " " + task[chapnum+tasknum].name;
+
+		if(type==1){
+			document.getElementById("taskName").innerHTML = taskName;
+
+		}
+
+		
+		var txt = "";
+		
 		var i=0;
+		
 		//alert(txt);
-		for(var i=0; i<juqing.length;i++){
+		for(; i<juqing.length;i++){
+		
+			if(juqing[i].id == beginId +"01") break;
+			//alert(juqing[i].id +","+ beginId +"01");
+		}
+		
+		//alert(beginId);
+		
+		for(; i<juqing.length;i++){
+			//alert(juqing[i].id.substring(0,6)+","+beginId);
+			if(juqing[i].id.substring(0,6)!=beginId) break;
+
 			if(juqing[i].bg!="notes"){
 				var string1 = "<div class='block' style=background-image:url('../images/bg/" + juqing[i].bg + ".png');>";
 				var string2 = "<div class='img1' style=background-image:url('../images/npc/" + juqing[i].npcL + "-1.png');>";	
 				var string3 = "<div class='img1' style=background-image:url('../images/npc/" + juqing[i].npcR + "-2.png');>";	
-				var string4 = "<div class='img1' style=background-image:url('../images/npc/" + juqing[i].npcName + "-" + juqing[i].LorR + ".png');>";
+				var string4 = "<div class='img1' style=background-image:url('../images/npc/" + juqing[i].npcName + "-000-" + juqing[i].LorR + ".png');>";
 				var string5 = "<div class='img1' style=background-image:url('../images/bg/bg-" + juqing[i].LorR + ".png');>";			
 				var string6 = "<div class='txt'><article class='txt' >" + juqing[i].text +"</article></div>";
 				var string7 = "</div></div></div></div></div>";
@@ -185,11 +312,44 @@ expand();
 				var string4 = "<div class='img1' >";	
 				var string5 = "<div class='img1' >";	
 			}
-		
+			
+				
 		}
+		
 
 		document.getElementById("text").innerHTML = txt;
-		
+		if(parseInt(beginId.substring(4,6))==1){
+			document.getElementById("lasttask").className="gray";
+			document.getElementById("clicklastT").onclick= function(){""};
+			document.getElementById("clicknextT").onclick= function(){initDialog(chapnum,tasknum+1,1);};
+		}
+		else if(task[chapnum+tasknum+1].id.substring(0,4)!=chapter[chapnum].id){
+			document.getElementById("nexttask").className="gray";
+			document.getElementById("clicknextT").onclick= function(){""};
+			document.getElementById("clicklastT").onclick= function(){initDialog(chapnum,tasknum-1,1);};
+		}
+		else{
+			document.getElementById("lasttask").className="normal";
+			document.getElementById("nexttask").className="normal";
+			document.getElementById("clicknextT").onclick= function(){initDialog(chapnum,tasknum+1,1);};
+			document.getElementById("clicklastT").onclick= function(){initDialog(chapnum,tasknum-1,1);};
+		}
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	
+	
+	}
+	
+	function toTaskNum(id){
+		var taskStr=""
+		if(id.substring(0,2)=="ZX"){
+			taskStr = parseInt(id.substring(2,4)) +"-";
+
+			if(id[4]=="9") taskStr += "支" + id[5];
+			else if(id[4]=="8") taskStr += "番外" + id[5];
+			else taskStr += parseInt(id.substring(4,6));
+		}
+		return taskStr;
+	}
 		
 	</script>	
 		
