@@ -319,12 +319,13 @@ initexpand();
 		
 
 		document.getElementById("text").innerHTML = txt;
+		alert(parseInt(beginId.substring(4,6)));
 		if(parseInt(beginId.substring(4,6))==1){
 			document.getElementById("lasttask").className="gray";
 			document.getElementById("clicklastT").onclick= function(){""};
 			document.getElementById("clicknextT").onclick= function(){initDialog(chapnum,tasknum+1,1);};
 		}
-		else if(task[chapnum+tasknum+1].id.substring(0,4)!=chapter[chapnum].id){
+		else if(task[chapnum+tasknum+1].id.substring(0,4)!=chapter[chapterNum].id){
 			document.getElementById("nexttask").className="gray";
 			document.getElementById("clicknextT").onclick= function(){""};
 			document.getElementById("clicklastT").onclick= function(){initDialog(chapnum,tasknum-1,1);};
