@@ -264,8 +264,6 @@ var juqing=[
 {"id":"ZX030217","bg":"bg102","npcL":"0","npcR":"bb-010","LorR":"2","text":"才不是！","npcName":"bb"},
 {"id":"ZX030218","bg":"bg102","npcL":"nn-010","npcR":"lf-020","LorR":"2","text":"哈哈～我今天是来学校为乐队做宣传招募新成员的，只是感觉效果并不好。","npcName":"lf"},
 {"id":"ZX030219","bg":"bg102","npcL":"nn-010","npcR":"lf-020","LorR":"1","text":"要不尝试一下更华丽个性的朋克装？这样可能会吸引更多人关注。","npcName":"nn"},
-<<<<<<< HEAD
-=======
 {"id":"ZX160101","bg":"bg1601","npcL":"","npcR":"","LorR":"0","text":"（铁蔷薇号飞空艇）","npcName":""},
 {"id":"ZX160102","bg":"bg1601","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"带走绫罗的那个人……他是什么人？","npcName":"dmiao"},
 {"id":"ZX160103","bg":"bg1601","npcL":"nn-010","npcR":"bb-010","LorR":"2","text":"凌云城被重重围困，那个神秘青年难道也和我们一样，是通过下水道进城的吗？","npcName":"bb"},
@@ -562,7 +560,6 @@ var juqing=[
 {"id":"ZX168316","bg":"bg1601","npcL":"nn-010","npcR":"hy-010","LorR":"2","text":"这次行动会很危险，暖暖，你最好先慎重地考虑一下，我不希望因为我个人的原因让你们发生意外。","npcName":"haiying"},
 {"id":"ZX168317","bg":"bg1601","npcL":"nn-010","npcR":"hy-010","LorR":"1","text":"别这么说，如果我们能够帮上你，那就太好了！","npcName":"nnuan"},
 
->>>>>>> 6365f458b8407b53a7b492e42da7ca0a5d732ddc
 {"id":"ZX180101","bg":"bg1701","npcL":"","npcR":"bb-010","LorR":"2","text":"（小声）呼……幸好有大小姐带路，总算赶在他们关闭安全通道前回来了……","npcName":"bb"},
 {"id":"ZX180102","bg":"bg1701","npcL":"","npcR":"0","LorR":"2","text":"各位宾客稍安勿躁，警察很快就会到达，请各位不要离开，在宴会厅中耐心等待！","npcName":"ces"},
 {"id":"ZX180103","bg":"bg1701","npcL":"","npcR":"0","LorR":"2","text":"你这话什么意思？难道你认为我们都是嫌犯？ ","npcName":"gfr"},
@@ -912,36 +909,6 @@ var juqing=[
 {"id":"ZX188118","bg":"bg1801","npcL":"","npcR":"xbe-010","LorR":"2","text":"这是……？！","npcName":"0"},
 {"id":"ZX188119","bg":"bg1801","npcL":"","npcR":"xbe-010","LorR":"1","text":"一份价值连城的委托。要和我一起赴约吗？","npcName":"sfy"},
 {"id":"ZX188120","bg":"bg1801","npcL":"","npcR":"xbe-010","LorR":"2","text":"（微笑）真没想到……你居然也有找我帮忙的一天。那，我就勉强答应你吧。","npcName":"0"},
-<<<<<<< HEAD
-{"id":"ZMR0110101","bg":"bg302","npcL":"0","npcR":"0","LorR":"0","text":"（云端边境，花田，新历680年）","npcName":""},
-{"id":"ZMR0110102","bg":"bg302","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"哇！又下雨了，一下雨好潮湿，真不喜欢！绫罗、暖暖，你们说呢？","npcName":"dmiao"},
-{"id":"ZMR0110103","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"哈哈，我倒很喜欢雨天，因为雨后总会有美丽的彩虹。","npcName":"ll"},
-{"id":"ZMR0110104","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"说起来，我最喜欢的还是架着火炉，一边煮酒一边听雨呢，因为雨后彩虹……总让我想起姐妹的事。","npcName":"ll"},
-{"id":"ZMR0110105","bg":"bg302","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"咦？绫罗你有姐妹啊，怎么从没听你提起过。唔，不过比起煮酒听雨，还是吃五花肉听雨比较吸引我……暖暖你说呢？","npcName":"dmiao"},
-{"id":"ZMR0110106","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"姐姐……（望着天空出神）","npcName":"nn"},
-{"id":"ZMR0110107","bg":"bg302","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"暖暖！","npcName":"dmiao"},
-{"id":"ZMR0110108","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"啊！","npcName":"nn"},
-{"id":"ZMR0110109","bg":"bg302","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"你今天怎么了？老是心不在焉地看天。","npcName":"dmiao"},
-{"id":"ZMR0110110","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"没，没什么……就是突然想起姐姐……","npcName":"nn"},
-{"id":"ZMR0110111","bg":"bg302","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"原来你是想起她来啦…是啊，一转眼我们来到奇迹大陆都这么久了，不知道优优现在在做什么呢？","npcName":"dmiao"},
-{"id":"ZMR0110112","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"优优，真是个温柔的名字……是暖暖的姐姐吗？","npcName":"ll"},
-{"id":"ZMR0110113","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"是啊。说起来，她给我的感觉和绫罗有点像呢。一直很温柔，很可靠，而且特别会照顾人。总觉得……绫罗就是那种很适合做姐姐的类型。","npcName":"nn"},
-{"id":"ZMR0110114","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"可惜我倒没有亲生姐妹，只不过……我曾经有过一位从天而降的妹妹呢。","npcName":"ll"},
-{"id":"ZMR0110115","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"嗯？从天而降？","npcName":"nn"},
-{"id":"ZMR0110116","bg":"bg302","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"绫罗的表情，一看就有故事！","npcName":"dmiao"},
-{"id":"ZMR0110117","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"是啊，正好快下雨了。想听的话，就陪我喝一杯吧？","npcName":"ll"},
-{"id":"ZMR0110201","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"暖暖，大喵，你们知道九日战争吧？","npcName":"ll"},
-{"id":"ZMR0110202","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"我听啵啵提过，是争夺萨耶王三遗作时的七国战争吗？据说是最高水准的搭配战争，有许多传说中的服装出现呢。","npcName":"nn"},
-{"id":"ZMR0110203","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"是啊……但表面的和平之下其实暗潮汹涌。为了得到能打赢战争的制胜服装，许多国家耗尽了国力，甚至到处掠夺珍贵布料和设计图。","npcName":"ll"},
-{"id":"ZMR0110204","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"在最残酷的时候，输掉一场搭配战斗，就会被敌人抢走整个城池中所有的布料和设计图呢！","npcName":"ll"},
-{"id":"ZMR0110205","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"天哪，这么可怕？但后来战争结束了，应该就没有这样的事情了吧。","npcName":"nn"},
-{"id":"ZMR0110206","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"不……很可悲，这个陋习被一些北地的搭配军团延续至今，经常以搭配战斗为名去小的边境城池劫掠，甚至围城。","npcName":"ll"},
-{"id":"ZMR0110207","bg":"bg302","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"几年前，我作为首席设计师在凌云城修行，就遇到过……","npcName":"ll"},
-{"id":"ZMR0110208","bg":"bg302","npcL":"0","npcR":"0","LorR":"0","text":"（随着绫罗的叙述，回忆倒回当年……）","npcName":""},
-{"id":"ZMR0110209","bg":"bg302","npcL":"0","npcR":"0","LorR":"0","text":"（五年前，新历675年）","npcName":""},
-{"id":"ZMR0110210","bg":"bg302","npcL":"","npcR":"0","LorR":"1","text":"云端的胆小鬼！别躲在城里，出来！和我们战一场！","npcName":"0"},
-{"id":"ZMR0110211","bg":"bg302","npcL":"","npcR":"0","LorR":"1","text":"怕了吧，早知道你们云端的设计师都是些轻飘飘的软蛋，连武器都设计不出来，还好意思参加战争！","npcName":"0"},
-=======
 {"id":"ZMR0110101","bg":"bg702","npcL":"","npcR":"","LorR":"0","text":"（云端边境，花田，新历680年）","npcName":""},
 {"id":"ZMR0110102","bg":"bg702","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"哇！又下雨了，一下雨好潮湿，真不喜欢！绫罗、暖暖，你们说呢？","npcName":"dmiao"},
 {"id":"ZMR0110103","bg":"bg702","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"哈哈，我倒很喜欢雨天，因为雨后总会有美丽的彩虹。","npcName":"ll"},
@@ -1377,7 +1344,6 @@ var juqing=[
 {"id":"ZMR0121412","bg":"bg601","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"机会那么难得，我还想听上次你弹得那个曲子！","npcName":"dmiao"},
 {"id":"ZMR0121413","bg":"bg601","npcL":"nn-010","npcR":"ll-010","LorR":"1","text":"我也是呢。","npcName":"nnuan"},
 {"id":"ZMR0121414","bg":"bg601","npcL":"nn-010","npcR":"ll-010","LorR":"2","text":"没问题。","npcName":"ll"},
->>>>>>> 6365f458b8407b53a7b492e42da7ca0a5d732ddc
 
 {"id":"ZMR0240101","bg":"bg302","npcL":"","npcR":"","LorR":"0","text":"（新历680年，威尔顿）","npcName":""},
 {"id":"ZMR0240102","bg":"bg302","npcL":"","npcR":"","LorR":"0","text":"（枪击之后的清晨重归寂静。）","npcName":""},
