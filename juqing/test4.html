@@ -146,7 +146,7 @@ function initChapter(){
 function initTask(num){
 	num=parseInt(num);
 	chapterNum=num;
-	alert(chapterNum);
+	//alert(chapterNum);
 	chapterName = chapter[chapterNum].name;
 	var i=0;
 	//alert(chapter[num].id);
@@ -163,7 +163,7 @@ function initTask(num){
 	for(var j=i;j<task.length;j++){
 
 		if(task[j].id.substring(0,6)!=chapter[chapterNum].id) break;
-		alert(task[j].id);
+		//alert(task[j].id);
 		chooseString+="<span class='task' onclick='initDialog(" + chapterNum + "," + (j-i) + ",2)'>"+toTaskNum(task[j].id)+"</span>";
 				
 	}
@@ -173,14 +173,14 @@ function initTask(num){
 
 	document.getElementById("main").innerHTML ="<div id='jump1'class='block'><span id='clicklastC'onclick=funNull()><img id='lastchapter'class='normal'src='../images/lastchapter.png'></span><span id='clickchoose'onclick=initChapter()><img id='choosechapter'class='normal'src='../images/choosechapter.png'></span><span id='clicknextC'onclick=funNull()><img id='nextchapter'class='normal'src='../images/nextchapter.png'></span></div><div id='choosseTask'class='block'onclick='expand()'><div id='chapterName'></div><div id='taskName'></div></div><div id='text'></div><div id='jump2'class='block'><span id='clicklastT'onclick=funNull()><img id='lasttask'class='normal'src='../images/lasttask.png'></span><span id='clickchooseT'onclick=expand()><img id='choosetask'class='normal'src='../images/choosetask.png'></span><span id='clicknextT'onclick=funNull()><img id='nexttask'class='normal'src='../images/nexttask.png'></span></div>";
 	//alert(num);
-	if(chapterNum==0){
+	if(chapterNum==18){
 		document.getElementById("lastchapter").className="gray";
 		document.getElementById("nextchapter").className="normal";
 		document.getElementById("clicklastC").onclick= function(){""};
 		document.getElementById("clicknextC").onclick= function(){initTask(chapterNum+1);};
 		
 	}
-	else if(chapterNum>=24){
+	else if(chapterNum>=43){
 		
 		document.getElementById("lastchapter").className="normal";
 		document.getElementById("nextchapter").className="gray";
@@ -256,18 +256,22 @@ initexpand();
 	</script>	
 	<script>
 	function initDialog(chapnum,tasknum,type){
+		
 		initexpand();
 		//alert(parseInt(beginId.substring(4,2)));
-		for(var k=0;k<task.length;k++){
 
-			if(task[k].id.substring(0,5)==chapter[chapterNum].id){
-				chapnum=k;
-				
-				break;
-			}
-			
-		}
 		
+			for(var k=0;k<task.length;k++){
+
+				if(task[k].id.substring(0,6)==chapter[chapterNum].id){
+					chapnum=k;
+					
+					break;
+				}
+				
+			}
+	
+
 
 		tasknum=parseInt(tasknum);
 		beginId=task[chapnum+tasknum].id;
