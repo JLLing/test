@@ -1895,7 +1895,6 @@ var juqing=[
 {"id":"ZX129302","bg":"bg1201","npcL":"nn-010","npcR":"dmiao-010","LorR":"2","text":"额，还有啊……","npcName":"dmiao"},
 {"id":"ZX129303","bg":"bg1201","npcL":"nn-010","npcR":"bb-010","LorR":"2","text":"感觉宝匣真是寂寞得太久了。","npcName":"bb"},
 {"id":"ZX129304","bg":"bg1201","npcL":"nn-010","npcR":"0","LorR":"2","text":"感觉你们的积极性不够啊！不如你们互相比拼算了，你们俩来搭配一身运动服试试看！","npcName":"bxjl"},
-#N/A
 {"id":"ZX130102","bg":"bg1301","npcL":"nn-010","npcR":"0","LorR":"2","text":"这里是建立在苹果联邦、信鸽帝国和荒原共和国边境交汇点上的一个火车站，","npcName":"qwb"},
 {"id":"ZX130103","bg":"bg1301","npcL":"nn-010","npcR":"0","LorR":"2","text":"从不同的出口出境可以到达不同的国家，你们不要走错了。","npcName":"qwb"},
 {"id":"ZX130104","bg":"bg1301","npcL":"nn-010","npcR":"0","LorR":"2","text":"你们进入荒原共和国之后，我们的身份不适合再继续前行，只能护送你们到这里了。","npcName":"qwb"},
