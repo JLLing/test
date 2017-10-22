@@ -68,6 +68,7 @@ var chapter=[
 {"id":"ZX66","name":"物华天宝芳姿绰约","desc":""},
 {"id":"ZX67","name":"极限竞速","desc":""},
 {"id":"ZX68","name":"超频入侵","desc":""},
+{"id":"ZX69","name":"钟楼幻影","desc":""},
 
 
 ]
